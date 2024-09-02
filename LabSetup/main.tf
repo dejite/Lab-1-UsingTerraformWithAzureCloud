@@ -10,7 +10,7 @@ resource "azurerm_virtual_network" "vnet-e-01" {
   location            = azurerm_resource_group.net.location
   address_space       = ["10.0.0.0/16"]
 }
-
+# changed somethings
 resource "azurerm_subnet" "subnet-01" {
   name                 = "subnet-01"
   resource_group_name  = azurerm_resource_group.net.name
